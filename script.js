@@ -1,6 +1,20 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+
+
+function titleClock() {
+
+  var timeTitle = document.querySelector("#currentDay");
+  timeTitle.innerText = dayjs().format("HH:mm:ss");
+  setInterval(titleClock, 1000);
+
+  console.log(titleClock);
+}
+window.onload = titleClock;
+
+
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in

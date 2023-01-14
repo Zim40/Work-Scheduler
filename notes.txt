@@ -1,0 +1,2 @@
+the first three containers have px-5 as part of there div class. this means somewhere in the bootstrap is a class of px-5 that adds margins and padding. 
+make sure to add that to the other containers, or even, make a fliud container surrounding all of the divs

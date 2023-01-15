@@ -33,6 +33,6 @@ MIT Licence - refer to GitHub.
 
 ## Links
 
-Live Page -
+Live Page - https://zim40.github.io/Work-Scheduler/ 
  
 !["WorkScheduler"](./Assets/Project.png) 

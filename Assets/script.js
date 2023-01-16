@@ -22,16 +22,16 @@ $(function () {
   }
   handleSave();
 
-  // Calls the saved user input and replaces the contents in the respective containers they were written in.
-  // window.addEventListener("load", function () {
-    var textInput = document.querySelectorAll(".description");
-    for (var i=0; i < textInput.length; i++) {
-      var savedText = localStorage.getItem("Key" + i);
-      if (savedText) {
-        textInput[i].value = savedText;
-      }
+  // Calls the saved user input and replaces the contents in the
+  //  respective containers they were written in.
+  var textInput = document.querySelectorAll(".description");
+  for (var i = 0; i < textInput.length; i++) {
+    var savedText = localStorage.getItem("Key" + i);
+    if (savedText) {
+      textInput[i].value = savedText;
     }
-  });
+  }
+  
 
   // Added classes to each div depending if dayjs is in the past present or future=================================
   setInterval(bgChange, 3600000);
@@ -58,7 +58,5 @@ $(function () {
     
     }); 
   }  
-  bgChange();
-
-
-
+  bgChange()
+})

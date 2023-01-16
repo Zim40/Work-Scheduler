@@ -17,16 +17,15 @@ Using dayjs and formatting correctly i was able to present the date and time wit
 # Usage
 Once the user has typed something into the text area, once the save button is click the data is then stored in localStorage, being called upon as the page loads/refreshes gives the user the ability to keep track of tasks ahead and also in the past. 
 ``` js
-// Calls the saved user input and replaces the contents in the respective containers they were written in.
-  window.addEventListener("load", function () {
-    var textInput = document.querySelectorAll(".description");
-    for (var i=0; i < textInput.length; i++) {
-      var savedText = localStorage.getItem("Key" + i);
-      if (savedText) {
-        textInput[i].value = savedText;
-      }
+// Calls the saved user input and replaces the contents in the
+  //  respective containers they were written in.
+  var textInput = document.querySelectorAll(".description");
+  for (var i = 0; i < textInput.length; i++) {
+    var savedText = localStorage.getItem("Key" + i);
+    if (savedText) {
+      textInput[i].value = savedText;
     }
-  }); 
+  }
 ```
 # Licence 
 MIT Licence - refer to GitHub.

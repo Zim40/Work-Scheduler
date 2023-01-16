@@ -23,7 +23,7 @@ $(function () {
   handleSave();
 
   // Calls the saved user input and replaces the contents in the respective containers they were written in.
-  window.addEventListener("load", function () {
+  // window.addEventListener("load", function () {
     var textInput = document.querySelectorAll(".description");
     for (var i=0; i < textInput.length; i++) {
       var savedText = localStorage.getItem("Key" + i);
@@ -60,5 +60,5 @@ $(function () {
   }  
   bgChange();
 
-})
+
 
